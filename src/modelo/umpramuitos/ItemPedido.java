@@ -14,7 +14,8 @@ public class ItemPedido {
     @ManyToOne
     private Pedido pedido;
 
-    @ManyToOne
+    // esse é o valor default de fetch (...ToOne -> EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Produto produto;
 
     @Column(nullable = false)
