@@ -11,6 +11,19 @@ public class Assento {
     private Long id;
     private String nome;
 
+    @OneToOne(mappedBy = "assento")
+    private Cliente cliente;
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+
+
     public Assento() {
 
     }
