@@ -48,6 +48,7 @@ public class Filme {
         this.nome = nome;
     }
 
+    
     public Double getNota() {
         return nota;
     }
